@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="hint_login_username">Użytkownik</string>
+    <string name="hint_login_password">Hasło</string>
+    <string name="btn_login">Zaloguj</string>
+    <string name="btn_settings">Ustawienia</string>
+    <string name="btn_logout">Wyloguj</string>
+</resources>
