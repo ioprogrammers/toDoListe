@@ -11,7 +11,7 @@ class ToDoListViewModel : ViewModel() {
     val nav = _nav.receiveAsFlow()
 
     fun addNewPressed() {
-        _nav.trySend()
+        //_nav.trySend()
     }
 
 }

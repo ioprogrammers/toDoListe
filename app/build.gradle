@@ -35,6 +35,10 @@ android {
     buildFeatures{
         viewBinding true
     }
+    // Allow references to generated code
+    kapt {
+        correctErrorTypes true
+    }
 }
 
 dependencies {
@@ -53,4 +57,22 @@ dependencies {
   //  implementation "androidx.lifecycle:lifecycleviewmodel:2.2.0"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    def dagger_version = "2.40"
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // Dagger Core
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+// Dagger Android
+    api "com.google.dagger:dagger-android:$dagger_version"
+    api "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-android-processor:$dagger_version"
+
+// Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:$dagger_version"
+    kapt "com.google.dagger:hilt-android-compiler:$dagger_version"
+
 }
