@@ -23,5 +23,9 @@
     <fragment
         android:id="@+id/editFragment"
         android:name="com.sebastian.sliwinski.todoapp.ui.edit.EditFragment"
-        android:label="EditFragment" />
+        android:label="EditFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
 </navigation>
